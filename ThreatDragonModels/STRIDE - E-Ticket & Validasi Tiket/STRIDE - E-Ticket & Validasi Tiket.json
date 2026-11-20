@@ -28,8 +28,8 @@
         "cells": [
           {
             "position": {
-              "x": 390,
-              "y": 20
+              "x": 190,
+              "y": 140
             },
             "size": {
               "width": 112.5,
@@ -113,23 +113,23 @@
               "items": [
                 {
                   "group": "top",
-                  "id": "54aaab8f-9a4d-42ad-a142-6980259d3c7c"
+                  "id": "0c359ff2-8f59-492f-b8be-f76a7f7525f4"
                 },
                 {
                   "group": "right",
-                  "id": "ad2fb125-9f3e-4bc0-96bc-80e9a3d177c2"
+                  "id": "c1e522c5-cf86-471d-a75b-0a74a9b7d81c"
                 },
                 {
                   "group": "bottom",
-                  "id": "2c9a1310-9f4c-4052-8dff-7e1e40e5afc9"
+                  "id": "bb78ee3c-fa04-4554-ae16-64e648fcf290"
                 },
                 {
                   "group": "left",
-                  "id": "86f7890d-7900-4720-8307-8d2d7a23b23d"
+                  "id": "f70d866d-fbb9-4905-8c6e-c466d5a50720"
                 }
               ]
             },
-            "id": "a109be28-7325-4a72-af3b-827771a1c199",
+            "id": "e4c8f6da-3c7b-4296-b453-5c0185bc6637",
             "zIndex": 1,
             "data": {
               "type": "tm.Actor",
@@ -145,8 +145,8 @@
           },
           {
             "position": {
-              "x": 560,
-              "y": 20
+              "x": 708,
+              "y": 140
             },
             "size": {
               "width": 112.5,
@@ -230,23 +230,23 @@
               "items": [
                 {
                   "group": "top",
-                  "id": "54aaab8f-9a4d-42ad-a142-6980259d3c7c"
+                  "id": "0c359ff2-8f59-492f-b8be-f76a7f7525f4"
                 },
                 {
                   "group": "right",
-                  "id": "ad2fb125-9f3e-4bc0-96bc-80e9a3d177c2"
+                  "id": "c1e522c5-cf86-471d-a75b-0a74a9b7d81c"
                 },
                 {
                   "group": "bottom",
-                  "id": "2c9a1310-9f4c-4052-8dff-7e1e40e5afc9"
+                  "id": "bb78ee3c-fa04-4554-ae16-64e648fcf290"
                 },
                 {
                   "group": "left",
-                  "id": "86f7890d-7900-4720-8307-8d2d7a23b23d"
+                  "id": "f70d866d-fbb9-4905-8c6e-c466d5a50720"
                 }
               ]
             },
-            "id": "d9cf23b7-acd7-41e4-80b9-39a7e15d9760",
+            "id": "60728438-ac08-49c9-bad9-d4ec7559cbf1",
             "zIndex": 2,
             "data": {
               "type": "tm.Actor",
@@ -262,8 +262,8 @@
           },
           {
             "position": {
-              "x": 710,
-              "y": 20
+              "x": 920,
+              "y": 150
             },
             "size": {
               "width": 112.5,
@@ -347,23 +347,23 @@
               "items": [
                 {
                   "group": "top",
-                  "id": "54aaab8f-9a4d-42ad-a142-6980259d3c7c"
+                  "id": "0c359ff2-8f59-492f-b8be-f76a7f7525f4"
                 },
                 {
                   "group": "right",
-                  "id": "ad2fb125-9f3e-4bc0-96bc-80e9a3d177c2"
+                  "id": "c1e522c5-cf86-471d-a75b-0a74a9b7d81c"
                 },
                 {
                   "group": "bottom",
-                  "id": "2c9a1310-9f4c-4052-8dff-7e1e40e5afc9"
+                  "id": "bb78ee3c-fa04-4554-ae16-64e648fcf290"
                 },
                 {
                   "group": "left",
-                  "id": "86f7890d-7900-4720-8307-8d2d7a23b23d"
+                  "id": "f70d866d-fbb9-4905-8c6e-c466d5a50720"
                 }
               ]
             },
-            "id": "89a31845-2047-4f05-89ad-013564f261e1",
+            "id": "3fc7897f-e896-47c1-bc37-3d891e22f19a",
             "zIndex": 3,
             "data": {
               "type": "tm.Actor",
@@ -379,8 +379,8 @@
           },
           {
             "position": {
-              "x": 503,
-              "y": 118
+              "x": 340,
+              "y": 270
             },
             "size": {
               "width": 60,
@@ -464,23 +464,23 @@
               "items": [
                 {
                   "group": "top",
-                  "id": "c8724880-5258-4880-8f13-ca3ae7cd842c"
+                  "id": "68d6ab2c-b37b-4076-8f52-b6d759d3dff6"
                 },
                 {
                   "group": "right",
-                  "id": "5e794c5f-8312-4c3a-8c45-e0d8a198f3f4"
+                  "id": "642d5296-d9a6-4514-9254-37a17e6ccd76"
                 },
                 {
                   "group": "bottom",
-                  "id": "95280b87-1f17-4fc8-a9d9-2bbe15c10d6d"
+                  "id": "436f8dbb-0e34-4493-ac19-252ea43b02b5"
                 },
                 {
                   "group": "left",
-                  "id": "3317c41e-03c5-4c04-8df8-e92b0f1b7830"
+                  "id": "f67e2172-d9a4-447f-a3e3-123fe5072e7d"
                 }
               ]
             },
-            "id": "60387773-ec41-4f67-94d4-f0a46bfaa176",
+            "id": "3d297740-0b21-48dc-a404-138cf846eb05",
             "zIndex": 4,
             "data": {
               "type": "tm.Process",
@@ -499,8 +499,8 @@
           },
           {
             "position": {
-              "x": 650,
-              "y": 118
+              "x": 720,
+              "y": 280
             },
             "size": {
               "width": 60,
@@ -584,23 +584,23 @@
               "items": [
                 {
                   "group": "top",
-                  "id": "c8724880-5258-4880-8f13-ca3ae7cd842c"
+                  "id": "68d6ab2c-b37b-4076-8f52-b6d759d3dff6"
                 },
                 {
                   "group": "right",
-                  "id": "5e794c5f-8312-4c3a-8c45-e0d8a198f3f4"
+                  "id": "642d5296-d9a6-4514-9254-37a17e6ccd76"
                 },
                 {
                   "group": "bottom",
-                  "id": "95280b87-1f17-4fc8-a9d9-2bbe15c10d6d"
+                  "id": "436f8dbb-0e34-4493-ac19-252ea43b02b5"
                 },
                 {
                   "group": "left",
-                  "id": "3317c41e-03c5-4c04-8df8-e92b0f1b7830"
+                  "id": "f67e2172-d9a4-447f-a3e3-123fe5072e7d"
                 }
               ]
             },
-            "id": "e7bcea9c-3f70-435e-aba6-4203349287fc",
+            "id": "2a65ba81-0be5-4c05-81d2-115da506ae92",
             "zIndex": 5,
             "data": {
               "type": "tm.Process",
@@ -619,8 +619,8 @@
           },
           {
             "position": {
-              "x": 823,
-              "y": 118
+              "x": 428,
+              "y": 398
             },
             "size": {
               "width": 60,
@@ -704,23 +704,23 @@
               "items": [
                 {
                   "group": "top",
-                  "id": "c8724880-5258-4880-8f13-ca3ae7cd842c"
+                  "id": "68d6ab2c-b37b-4076-8f52-b6d759d3dff6"
                 },
                 {
                   "group": "right",
-                  "id": "5e794c5f-8312-4c3a-8c45-e0d8a198f3f4"
+                  "id": "642d5296-d9a6-4514-9254-37a17e6ccd76"
                 },
                 {
                   "group": "bottom",
-                  "id": "95280b87-1f17-4fc8-a9d9-2bbe15c10d6d"
+                  "id": "436f8dbb-0e34-4493-ac19-252ea43b02b5"
                 },
                 {
                   "group": "left",
-                  "id": "3317c41e-03c5-4c04-8df8-e92b0f1b7830"
+                  "id": "f67e2172-d9a4-447f-a3e3-123fe5072e7d"
                 }
               ]
             },
-            "id": "aa2a26dc-38d6-409e-89e3-9f0999fadad3",
+            "id": "49e3e39e-4c2f-4536-b963-21afafd12080",
             "zIndex": 6,
             "data": {
               "type": "tm.Process",
@@ -739,8 +739,8 @@
           },
           {
             "position": {
-              "x": 620,
-              "y": 269
+              "x": 530,
+              "y": 588
             },
             "size": {
               "width": 120,
@@ -827,28 +827,28 @@
               "items": [
                 {
                   "group": "top",
-                  "id": "0add13e7-0efe-4cde-8239-d2865e7e2ee7"
+                  "id": "2b953e38-902b-4d24-ada2-1b0030016a5e"
                 },
                 {
                   "group": "right",
-                  "id": "edeb116a-b311-4f7f-9f8a-518f39be8bd1"
+                  "id": "62183eb7-cb5f-44f5-b4d4-19afbd663b4e"
                 },
                 {
                   "group": "bottom",
-                  "id": "a0112cf8-704d-4cbe-ae80-2b5bb31838da"
+                  "id": "43636d53-a2ff-403d-8e3b-0227f687aff3"
                 },
                 {
                   "group": "left",
-                  "id": "04e76d65-10cd-4c86-a6b3-a2ddfc843e89"
+                  "id": "8cf2ad4a-446b-4c28-8de1-e966786c0a70"
                 }
               ]
             },
-            "id": "8c44a4b1-4199-490f-851f-56db8aa61178",
+            "id": "89dcf4e4-91f1-4ca0-9027-c4646e1c9b27",
             "zIndex": 7,
             "data": {
               "type": "tm.Store",
               "name": "Database Tiket",
-              "description": "Identitas peserta, data registrasi, ID/QR tiket, sesi petugas, status check-in, dan ringkasan kehadiran.",
+              "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
@@ -860,6 +860,354 @@
               "storesInventory": false,
               "threats": []
             }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Data registrasi peserta",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Data registrasi peserta"
+            ],
+            "id": "741ed003-b3f7-4dc8-b106-1f283978d5d7",
+            "source": {
+              "cell": "e4c8f6da-3c7b-4296-b453-5c0185bc6637",
+              "port": "bb78ee3c-fa04-4554-ae16-64e648fcf290"
+            },
+            "target": {
+              "cell": "3d297740-0b21-48dc-a404-138cf846eb05",
+              "port": "f67e2172-d9a4-447f-a3e3-123fe5072e7d"
+            },
+            "vertices": []
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Permintaan registrasi",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Permintaan registrasi"
+            ],
+            "id": "eba7db1c-3a07-4283-8eb7-3b1aa8a39439",
+            "source": {
+              "cell": "3d297740-0b21-48dc-a404-138cf846eb05",
+              "port": "f67e2172-d9a4-447f-a3e3-123fe5072e7d"
+            },
+            "target": {
+              "cell": "49e3e39e-4c2f-4536-b963-21afafd12080",
+              "port": "f67e2172-d9a4-447f-a3e3-123fe5072e7d"
+            },
+            "vertices": []
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Data registrasi dan data tiket",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Data registrasi dan data tiket"
+            ],
+            "id": "c08312c1-2ca9-43c0-a4d2-301b079372e1",
+            "source": {
+              "cell": "49e3e39e-4c2f-4536-b963-21afafd12080",
+              "port": "f67e2172-d9a4-447f-a3e3-123fe5072e7d"
+            },
+            "target": {
+              "cell": "89dcf4e4-91f1-4ca0-9027-c4646e1c9b27",
+              "port": "8cf2ad4a-446b-4c28-8de1-e966786c0a70"
+            },
+            "vertices": []
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Data registrasi dan ID tiket",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Data registrasi dan ID tiket"
+            ],
+            "id": "256fb492-5667-47f5-be5e-e3f52d89f768",
+            "source": {
+              "cell": "89dcf4e4-91f1-4ca0-9027-c4646e1c9b27",
+              "port": "8cf2ad4a-446b-4c28-8de1-e966786c0a70"
+            },
+            "target": {
+              "cell": "49e3e39e-4c2f-4536-b963-21afafd12080",
+              "port": "f67e2172-d9a4-447f-a3e3-123fe5072e7d"
+            },
+            "vertices": [
+              {
+                "x": 410,
+                "y": 618
+              },
+              {
+                "x": 350,
+                "y": 520
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Konfirmasi registrasi dan QR Code",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Konfirmasi registrasi dan QR Code"
+            ],
+            "id": "ff332844-050d-4589-930c-cbe61074b57e",
+            "source": {
+              "cell": "49e3e39e-4c2f-4536-b963-21afafd12080",
+              "port": "f67e2172-d9a4-447f-a3e3-123fe5072e7d"
+            },
+            "target": {
+              "cell": "3d297740-0b21-48dc-a404-138cf846eb05",
+              "port": "f67e2172-d9a4-447f-a3e3-123fe5072e7d"
+            },
+            "vertices": [
+              {
+                "x": 270,
+                "y": 428
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Tampilan tiket digital",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Tampilan tiket digital"
+            ],
+            "id": "892e3bca-a08a-4788-935b-ae1f516bf0cc",
+            "source": {
+              "cell": "3d297740-0b21-48dc-a404-138cf846eb05",
+              "port": "f67e2172-d9a4-447f-a3e3-123fe5072e7d"
+            },
+            "target": {
+              "cell": "e4c8f6da-3c7b-4296-b453-5c0185bc6637",
+              "port": "bb78ee3c-fa04-4554-ae16-64e648fcf290"
+            },
+            "vertices": [
+              {
+                "x": 180,
+                "y": 300
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Kredensial login",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Kredensial login"
+            ],
+            "id": "fcac2e8f-6286-439d-aba4-8eb905112de8",
+            "source": {
+              "cell": "60728438-ac08-49c9-bad9-d4ec7559cbf1",
+              "port": "bb78ee3c-fa04-4554-ae16-64e648fcf290"
+            },
+            "target": {
+              "cell": "2a65ba81-0be5-4c05-81d2-115da506ae92",
+              "port": "68d6ab2c-b37b-4076-8f52-b6d759d3dff6"
+            },
+            "vertices": []
           },
           {
             "shape": "flow",
@@ -897,15 +1245,63 @@
             "labels": [
               "Data Flow"
             ],
-            "id": "1965acfb-9856-4719-8f8f-fbc02adb7fbd",
+            "id": "14f02721-5cfc-472d-861a-1530059dcd3d",
             "source": {
-              "x": 440,
-              "y": 100
+              "cell": "2a65ba81-0be5-4c05-81d2-115da506ae92",
+              "port": "436f8dbb-0e34-4493-ac19-252ea43b02b5"
             },
             "target": {
-              "x": 540,
-              "y": 312
-            }
+              "cell": "49e3e39e-4c2f-4536-b963-21afafd12080",
+              "port": "642d5296-d9a6-4514-9254-37a17e6ccd76"
+            },
+            "vertices": []
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Permintaan autentikasi",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Permintaan autentikasi"
+            ],
+            "id": "c691f2bc-589c-421f-8740-2a50a1397305",
+            "source": {
+              "cell": "aa2a26dc-38d6-409e-89e3-9f0999fadad3",
+              "port": "c8724880-5258-4880-8f13-ca3ae7cd842c"
+            },
+            "target": {
+              "cell": "e7bcea9c-3f70-435e-aba6-4203349287fc",
+              "port": "95280b87-1f17-4fc8-a9d9-2bbe15c10d6d"
+            },
+            "vertices": []
           }
         ],
         "description": "Sistem tiket digital untuk satu acara. Peserta mendaftar pada Portal Web dan menerima tiket ber-QR code unik."
