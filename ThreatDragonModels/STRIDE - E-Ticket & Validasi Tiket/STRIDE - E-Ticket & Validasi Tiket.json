@@ -1317,8 +1317,8 @@
         "description": "Sistem tiket digital untuk satu acara. Peserta mendaftar pada Portal Web dan menerima tiket ber-QR code unik."
       }
     ],
-    "diagramTop": 3,
+    "diagramTop": 5,
     "reviewer": "",
-    "threatTop": 1
+    "threatTop": 5
   }
 }
