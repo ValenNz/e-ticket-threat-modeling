@@ -391,8 +391,8 @@
                 "text": "Portal Web"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -489,12 +489,47 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "662493be-2e26-4a2f-bb94-8955cea786e8",
+                  "title": "T06 - Kebocoran Data Pribadi Peserta pada Aliran Tiket",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Information disclosure",
+                  "description": "Elemen Terkait: Peserta (E1), Portal Web (P1), dan Backend Tiket (P3); aliran data F01 - F02, F05 - F06.\n\nSkenario: Data pendaftaran peserta (nama, email, nomor kontak, dan ID tiket) dikirimkan melalui portal web dan ditampilkan kembali saat tiket digital diterbitkan. Jika komunikasi data tidak dienkripsi secara penuh atau tautan tiket digital dapat ditebak dengan mengganti parameter URL (IDOR pada `/ticket/{id}`), pihak ketiga atau penyerang dapat menyadap jaringan publik atau melakukan scraping untuk mencuri data pribadi dan QR Code milik peserta lain.\n\nDampak: Terjadinya kebocoran data pribadi (PII) peserta yang melanggar privasi, serta potensi QR Code tiket dicuri dan dipakai orang lain sebelum pemilik sah tiba di lokasi.",
+                  "mitigation": "1. Terapkan protokol HTTPS (TLS 1.3) wajib pada seluruh rute pengiriman formulir dan penampilan tiket.\n2. Gunakan URL token acak yang tidak dapat ditebak (misalnya UUIDv4 acak) untuk mengakses tiket digital, bukan ID sekuensial.\n3. Tambahkan verifikasi kepemilikan (misalnya OTP atau tautan berbatas waktu ke email pendaftar) sebelum tiket digital dapat diunduh/ditampilkan.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 8,
+                  "score": "4 (K2 x D2)"
+                },
+                {
+                  "id": "f43181db-3517-44e2-8a50-6daaaef93de3",
+                  "title": "T07 - Kebocoran Data Rekapitulasi Kehadiran pada Dashboard Admin",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Information disclosure",
+                  "description": "Elemen Terkait: Admin Acara (E3), Portal Web (P1), dan Backend Tiket (P3); aliran data F19 - F24.\n\nSkenario: Admin memantau rekapitulasi kehadiran melalui dashboard web. Jika endpoint API dashboard tidak memvalidasi sesi admin secara ketat atau URL dashboard dapat dibuka publik tanpa verifikasi peran (BOLA/Broken Object Level Authorization), pihak luar atau peserta biasa dapat mengakses URL tersebut dan melihat data ringkasan kehadiran serta identitas peserta yang hadir.\n\nDampak: Bocornya data pribadi peserta seminar ke publik, pelanggaran kerahasiaan data operasional acara, dan penurunan reputasi pihak penyelenggara.",
+                  "mitigation": "1. Terapkan autentikasi dan Role-Based Access Control (RBAC) ketat di sisi backend; hanya akun dengan peran ADMIN yang diizinkan mengakses endpoint dashboard.\n2. Wajibkan enkripsi HTTPS (TLS) pada semua komunikasi antara browser admin dan server backend.\n3. Terapkan prinsip least privilege: kirimkan data ringkasan statistik saja, jangan menyertakan data pribadi peserta jika tidak diperlukan untuk dashboard.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 10,
+                  "score": "6 (K2 x D3)"
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 0,
+                "tampering": 0,
+                "repudiation": 0,
+                "informationDisclosure": 2,
+                "denialOfService": 0,
+                "elevationOfPrivilege": 0
+              }
             }
           },
           {
@@ -511,8 +546,8 @@
                 "text": "Aplikasi Pemindai"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -609,12 +644,47 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "5222075f-4393-4927-8166-602960a31403",
+                  "title": "T05 - Penyangkalan Aktivitas Check-in oleh Petugas",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Repudiation",
+                  "description": "Elemen Terkait: Petugas Pintu (E2), Aplikasi Pemindai (P2), Backend Tiket (P3), dan Database Tiket (D1); aliran data F12 - F13, F16, F18.\n\nSkenario: Beberapa pintu masuk memindai tiket secara bersamaan sehingga banyak petugas bekerja paralel. Petugas dapat menyangkal tindakannya jika sistem tidak mencatat secara rinci siapa yang memvalidasi setiap tiket (identitas petugas, ID perangkat, nomor pintu, waktu, dan hasil pemindaian), atau jika akun/perangkat dipakai bergantian tanpa pencatatan audit log. Petugas yang meloloskan orang tanpa tiket sah atau menolak peserta sah dapat berkilah \"bukan saya yang memindai\" atau \"sistemnya yang keliru\".\n\nDampak: Penyelenggara sulit mengusut penyalahgunaan tiket dan menyelesaikan perselisihan dengan peserta. Tidak ada akuntabilitas petugas, dan penyalahgunaan wewenang tidak dapat dilacak.",
+                  "mitigation": "1. Wajibkan akun petugas personal (1 orang 1 akun), larang penggunaan akun bersama, dan harus logout setiap pergantian shift.\n2. Catat audit log di Backend Tiket untuk setiap aksi validasi (sukses maupun gagal) berisi ID petugas, ID sesi, ID perangkat, pintu, timestamp server NTP, dan hasil validasi.\n3. Simpan audit log secara append-only dan terpisah agar tidak dapat diedit atau dihapus oleh petugas maupun admin.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 7,
+                  "score": "4 (K2 x D2)"
+                },
+                {
+                  "id": "c2154e43-804d-4798-9fa9-19a6eaf66d27",
+                  "title": "T08 - Penolakan Layanan pada Pemindaian di Pintu Masuk",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Spoofing",
+                  "description": "Elemen Terkait: Petugas Pintu (E2), Aplikasi Pemindai (P2), dan Backend Tiket (P3); aliran data F13, F17 - F18.\n\nSkenario: Pada saat jam sibuk menjelang acara dimulai, ribuan permintaan validasi dikirimkan dari berbagai pintu masuk. Karena aplikasi pemindai wajib terhubung ke internet untuk menerima hasil validasi, jika penyerang membombardir endpoint backend dengan ribuan permintaan tiket palsu secara masif (DoS/Flooding), server backend akan kehabisan kapasitas dan lambat merespons atau lumpuh (crash).\n\nDampak: Aplikasi pemindai gagal menerima respon validasi dari backend. Pintu masuk tidak dapat memverifikasi tiket secara real-time, antrean peserta menumpuk parah di pintu gerbang, dan acara tertunda.",
+                  "mitigation": "1. Pasang Rate Limiting dan proteksi DDoS (misalnya Cloudflare/API Gateway) pada endpoint validasi tiket.\n2. Implementasikan antrean pemrosesan pesan (message queue) dan mekanisme caching cepat (Redis) untuk query status tiket di backend.\n3. Sediakan mekanisme cadangan (failover mode) di aplikasi pemindai dengan verifikasi tanda tangan digital QR Code secara semi-offline jika koneksi ke backend terganggu sesaat.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 11,
+                  "score": "6 (K2 x D3)"
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 1,
+                "tampering": 0,
+                "repudiation": 1,
+                "informationDisclosure": 0,
+                "denialOfService": 0,
+                "elevationOfPrivilege": 0
+              }
             }
           },
           {
@@ -631,8 +701,8 @@
                 "text": "Backend Tiket"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -729,18 +799,47 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "0ed88c56-764d-4a77-bde1-ef5d7c2bfadc",
+                  "title": "T10 - Eskalasi Hak Akses ke Fungsi Administratif",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Elevation of privilege",
+                  "description": "Elemen Terkait: Petugas Pintu (E2), Aplikasi Pemindai (P2), Portal Web (P1), dan Backend Tiket (P3); aliran data F07 - F11, F19.\n\nSkenario: Petugas pintu memiliki akun login untuk memindai tiket. Jika backend tidak memverifikasi izin peran secara ketat di sisi server (hanya membatasi menu di antarmuka aplikasi), petugas pemindai atau penyerang dapat memanipulasi token sesi atau menembak langsung endpoint API khusus admin (misalnya untuk mereset status tiket, menambah kuota, atau mengubah data peserta), sehingga mendapatkan wewenang administratif penuh tanpa hak.\n\nDampak: Pengguna dengan hak rendah dapat mengambil alih kontrol manajemen acara, memanipulasi status kehadiran secara sewenang-wenang, atau melumpuhkan sistem validasi acara.",
+                  "mitigation": "1. Validasi otorisasi berbasis peran (Server-side RBAC) wajib dijalankan di setiap endpoint API backend, jangan pernah mengandalkan pembatasan tampilan di aplikasi/frontend.\n2. Pisahkan klaim izin token (scopes) antara akun petugas pintu (scope: scanner) dengan akun admin acara (scope: admin).\n3. Catat seluruh aktivitas perubahan data administratif dalam audit log yang terlindungi (tamper-proof audit log) untuk keperluan pelacakan.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 12,
+                  "score": "6 (K2 x D3)"
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 0,
+                "tampering": 0,
+                "repudiation": 0,
+                "informationDisclosure": 0,
+                "denialOfService": 0,
+                "elevationOfPrivilege": 1
+              }
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
             }
           },
           {
             "position": {
               "x": 530,
-              "y": 588
+              "y": 590
             },
             "size": {
               "width": 120,
@@ -1254,17 +1353,7 @@
               "cell": "49e3e39e-4c2f-4536-b963-21afafd12080",
               "port": "642d5296-d9a6-4514-9254-37a17e6ccd76"
             },
-            "vertices": [],
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead"
-              ],
-              "name": null
-            }
+            "vertices": []
           },
           {
             "shape": "flow",
@@ -1312,6 +1401,68 @@
               "port": "95280b87-1f17-4fc8-a9d9-2bbe15c10d6d"
             },
             "vertices": []
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Data Flow",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "1a56d2d3-193b-4dea-854a-832f82626e21",
+                  "title": "New STRIDE threat",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Tampering",
+                  "description": "Provide a description for this threat",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": true,
+                  "number": 6,
+                  "score": ""
+                }
+              ],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Data Flow"
+            ],
+            "id": "63e29e35-ef6e-4f7e-a45f-b2f3145a5c78",
+            "source": {
+              "cell": "60728438-ac08-49c9-bad9-d4ec7559cbf1",
+              "port": "bb78ee3c-fa04-4554-ae16-64e648fcf290"
+            },
+            "target": {
+              "x": 760,
+              "y": 200
+            },
+            "vertices": []
           }
         ],
         "description": "Sistem tiket digital untuk satu acara. Peserta mendaftar pada Portal Web dan menerima tiket ber-QR code unik."
@@ -1319,6 +1470,6 @@
     ],
     "diagramTop": 5,
     "reviewer": "",
-    "threatTop": 5
+    "threatTop": 12
   }
 }
