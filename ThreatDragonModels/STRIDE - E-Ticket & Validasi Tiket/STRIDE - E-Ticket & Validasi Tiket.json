@@ -1,0 +1,25 @@
+{
+  "version": "2.6.2",
+  "release_version": "1.0",
+  "released_at": "2026-11-20",
+  "summary": {
+    "title": "STRIDE - E-Ticket & Validasi Tiket",
+    "owner": "Nuevalen Refitra Alswando",
+    "description": "Sistem tiket digital untuk satu acara. Peserta mendaftar pada Portal Web dan menerima tiket ber-QR code unik. Pada hari acara, Petugas Pintu login pada Aplikasi Pemindai lalu memindai QR; Aplikasi mengirim ID tiket & sesi petugas ke Backend Tiket. Backend memeriksa kecocokan acara dan status pada Database Tiket, lalu mengubah status menjadi telah check-in. Beberapa pintu dapat memindai paralel. Admin Acara melihat rekap check-in melalui dashboard web. Analisis mencakup registrasi, penerbitan tiket, pemindaian, validasi, status check-in, dan dashboard. Pembayaran, pemasaran, dan notifikasi di luar lingkup.",
+    "id": 0
+  },
+  "detail": {
+    "contributors": [
+      {
+        "name": "stefanusandr"
+      },
+      {
+        "name": "seynth"
+      }
+    ],
+    "diagrams": [],
+    "diagramTop": 0,
+    "reviewer": "",
+    "threatTop": 0
+  }
+}
